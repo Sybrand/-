@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Don't ignore these:
+!.gitignore
+!LICENSE
+!.bash_profile
