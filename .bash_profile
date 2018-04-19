@@ -14,9 +14,13 @@ export LSCOLORS="EHfxcxdxBxegecabagacad"
 # Useful alliases
 #
 # Make ls better
+# -G      Enable colorized output....
+# -F      Display a slash (`/') immediately after each pathnam... (and other stuff)
+# -a      Include directory entries whose names begin with a dot (.).
 alias ls="ls -GFah"
 # Give me ll!!!! Life is too short to be typing `ls -l` all the damn time!
-alias ll="ls -l"
+# -h      When used with the -l option, use unit suffixes: Byte....
+alias ll="ls -lh"
 
 # Set Java 8 as default
 # Yuck. But some things needs Java.
