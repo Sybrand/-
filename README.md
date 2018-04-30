@@ -10,3 +10,16 @@ You need to drop this into ~ ; the easiest way (I think) to do that is as follow
     git init .
     git remote add origin git@github.com:Sybrand/-.git
     git pull origin master
+
+## Other things
+
+### On MAC
+
+#### Install stuff
+
+Install https://brew.sh/
+
+Run:
+
+   brew install git python3 nvm direnv postgresql
+   pip3 install virtualenv virtualenvwrapper --user
