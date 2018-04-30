@@ -33,6 +33,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Hom
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# Make bash prompt nice
+# \u The username of the current user
+# \H The hostname
+# \w The current working directory
 export PS1='\u@\H:\w$ '
 
 # Google cloud related stuff
@@ -41,3 +45,7 @@ if [ -f '~/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/sstr
 
 # The next line enables shell command completion for gcloud.
 if [ -f '~/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/sstrauss/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+# Python PATH
+#
+export PATH=~/Library/Python/3.6/bin:$PATH
