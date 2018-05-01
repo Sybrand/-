@@ -23,3 +23,10 @@ Run:
 
    brew install git python3 nvm direnv postgresql
    pip3 install virtualenv virtualenvwrapper --user
+
+#### Make dock be fast
+
+I don't like the delay before dock shows, and I don't like the slow animation. Life is too short.
+
+    defaults write com.apple.dock autohide-time-modifier -int 0 && killall Dock
+    defaults write com.apple.Dock autohide-delay -float 0 && killall Dock
