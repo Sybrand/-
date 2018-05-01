@@ -23,9 +23,9 @@ alias ls="ls -GFah"
 alias ll="ls -lh"
 
 # Set Java 8 as default
-# Yuck. But some things needs Java.
+# Yuck. But some things needs Java. Your version of Java is almost certainly going to differ from the one bellow:
 #
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
 
 # Node Version Management
 # Critical for easily switching node version!
