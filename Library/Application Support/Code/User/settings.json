@@ -28,8 +28,6 @@
         "suppressShowKeyBindingsNotice": true
     },
     "files.autoSave": "off",
-    "eslint.autoFixOnSave": true,
-    "editor.formatOnSave": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,
@@ -38,5 +36,24 @@
         "**/.DS_Store": true,
         "**/.direnv": true,
         "**/__pycache__": true
+    },
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [ 
+        "javascript", 
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        } 
+    ],
+    "editor.formatOnSave": false,
+    "[javascript]": {
+        "editor.tabSize": 2,
+    },
+    "[vue]": {
+        "editor.tabSize": 2
     }
  }
