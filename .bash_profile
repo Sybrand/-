@@ -49,3 +49,7 @@ if [ -f '~/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/User
 # Python PATH
 #
 export PATH=~/Library/Python/3.6/bin:$PATH
+
+# Bash completion
+# (do: brew install bash-completion)
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
