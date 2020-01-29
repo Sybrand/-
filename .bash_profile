@@ -33,7 +33,8 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Hom
 # Critical for easily switching node version!
 #
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Git branch in prompt.
 # taken from: https://gist.github.com/joseluisq/1e96c54fa4e1e5647940
@@ -98,4 +99,3 @@ function oc-tools-clean()
         do oc delete po/$p -n moe-gwells-tools
     done
 }
-
