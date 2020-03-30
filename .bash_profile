@@ -4,9 +4,9 @@
 # Direnv : https://direnv.net/
 # Direnv is awesome. It hooks up my python virtual environments and is generally useful.
 #
-eval "$(direnv hook bash)"
+#eval "$(direnv hook bash)"
 # Ruby. If for whatever reason you need ruby, you need to reload it to get the correct brew version.
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 # Terminal Colours
 # TODO: What's going on here???
@@ -68,6 +68,8 @@ if [ -f '~/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/User
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
+eval "$(pipenv --completion)"
+
 
 # OpenShift Functions
 function oc-project-cleanup()
@@ -99,3 +101,9 @@ function oc-tools-clean()
         do oc delete po/$p -n moe-gwells-tools
     done
 }
+
+# Setting PATH for Python 3.8
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
+export PATH
+

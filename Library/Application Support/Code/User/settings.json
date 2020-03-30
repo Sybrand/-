@@ -2,11 +2,11 @@
     "python.pythonPath": "/usr/local/bin/python3",
     "python.linting.enabled": true,
     "python.linting.lintOnSave": true,
-    "python.linting.pep8Enabled": true,
+    "python.linting.pycodestyleEnabled": true,
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django"
     ],
-    "python.linting.pep8Args": [
+    "python.linting.pycodestyleArgs": [
         "--max-line-length=110"
     ],
     "python.linting.ignorePatterns": [
@@ -29,28 +29,29 @@
     },
     "files.autoSave": "off",
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
+        "**/__pycache__": true,
         "**/.direnv": true,
-        "**/__pycache__": true
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/*.pyc": true,
+        "**/CVS": true
     },
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [ 
-        "javascript", 
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        } 
-    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+    },
     "editor.formatOnSave": false,
     "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 2,
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.tabSize": 2,
     },
     "[vue]": {
@@ -65,7 +66,6 @@
         "Package",
         "Struct"
     ],
-    "files.autoSave": "off",
     "gitlens.codeLens.scopes": [
         "containers",
         "document"
@@ -73,5 +73,7 @@
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.historyExplorer.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false
+    "gitlens.currentLine.enabled": false,
+    "window.zoomLevel": 1,
+    "workbench.enableExperiments": false
 }
